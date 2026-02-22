@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 # ========= CSV 路徑 =========
-CSV_PATH = r"day0222.CSV"
+CSV_PATH = r"day0222.csv"
 
 # ========= 讀取資料 =========
 @st.cache_data
@@ -74,4 +74,5 @@ st.subheader(f"股票 {stock_to_show} 資料")
 if query_result.empty:
     st.warning("查無資料")
 else:
+
     st.dataframe(query_result, use_container_width=True)
